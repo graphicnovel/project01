@@ -1,0 +1,176 @@
+@import url('common.css');
+
+
+/*--------------- header ---------------*/
+
+header{
+    padding:40px 0;
+}
+header article{
+    width:90%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header article h1{
+    width:30px; height:25px;
+}
+header article h1 a{}
+
+header article nav{}
+header article nav a{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color:#161616 !important;
+
+    
+}
+
+
+/*--------------- main ---------------*/
+
+main{}
+.visual{
+    background:#f3f3f3;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+}
+.visual strong{
+    font-size:38px;
+    color:#161616;
+}
+.visual p{
+    font-size:18px;
+    color:#787878;
+    white-space: pre-line;
+    font-weight: normal;
+}
+
+.list{}
+.list li{}
+.list li figure{}
+.list li figure img{
+    width:100%;
+}
+.list li figure figcaption{
+    position:absolute;
+    left:0; top:0;
+    width:100%; height:100%;
+    
+/* 1   background: rgba(33,191,185,0.6);*/
+
+    background:linear-gradient(0deg, rgba(33,191,185,0.4),transparent 50%);
+    padding-bottom:5%;
+
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+    color:#fff;
+    
+    opacity: 0;
+    transition:.5s;
+}
+.list li:hover figure figcaption{
+    opacity: 1;
+}
+
+/*--------------- footer ---------------*/
+
+footer{}
+
+
+
+
+
+
+/*--------------- 768 ~ 991 ---------------*/
+@media (max-width:480px){
+    .visual{
+        
+    }
+    .visual strong{
+        font-size:2.5em;
+        line-height: 1;
+        padding:0 10vw;
+    }
+    .visual p{
+        font-size:1em;
+        padding:0 10vw;
+    }
+    
+    
+    .list li figure figcaption{
+        position:absolute;
+        left:50; top:50;
+        width:100%; height:100%;
+
+
+        background:linear-gradient(0deg, rgba(0,0,0,0.4),transparent 50%);
+        padding-bottom:5%;
+
+        display: block;
+        justify-content: center;
+        align-items: flex-end;
+
+        color:#000;
+        opacity:0;
+        transition:0s;
+    }
+    
+    .list li:hover figure figcaption{
+    opacity: 0;
+    }
+
+}
+
+ @media print{
+    header{
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .list li figure figcaption{
+    position:static;
+    left:0; top:0;
+    width:100%; height:auto;
+
+    background:none;
+    padding-bottom:5%;
+
+    
+    
+    display: block;
+    justify-content: center;
+    align-items: flex-end;
+    
+    color:#000;
+    text-align: center;
+        padding:15px 0;
+        
+    opacity:1;
+    transition:0s;
+    }
+}
+
+/*--------------- 992 ---------------*/
+@media (min-width:992px){
+    
+    
+}
+
+/*--------------- 1170 ---------------*/
+@media (min-width:1170px){
+    
+}
+
+
